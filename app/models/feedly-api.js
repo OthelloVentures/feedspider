@@ -268,9 +268,9 @@ var FeedlyApi = Class.create({
     )
   },
 
-  //UPDATED 0.9.5
+  //UPDATED 1.1.2 - Testing
   _getArticles: function(id, exclude, continuation, success, failure) {
-    var parameters = {output: "json", count: 40}
+    var parameters = {output: "json", count: 1}
 
     if(!id.endsWith("/tag/global.saved") && Preferences.isOldestFirst()) {
       parameters.ranked = "oldest"
